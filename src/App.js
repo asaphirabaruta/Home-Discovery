@@ -11,11 +11,10 @@ function App() {
     <>
       <Navbar />
       <div className="container mt-5">
-        <Redirect path="/" to="/homes" />
         <Route path="/login" component={Login} />
         <Route path="/sign-up" component={SignUp} />
-        <Route path="/homes" component={Houses} />
         <Route path="/home-details" component={Details} />
+        <Route path="/" exact component={Houses} />
       </div>
     </>
   );

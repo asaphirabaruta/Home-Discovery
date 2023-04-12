@@ -17,7 +17,7 @@ export default function Navbar() {
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <Link class="navbar-brand" to="/homes">
+          <Link class="navbar-brand" to="/">
             <svg
               width="30"
               height="30"
@@ -49,7 +49,9 @@ export default function Navbar() {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Contact Us</a>
+                <a class="nav-link" href="#">
+                  Contact Us
+                </a>
               </li>
             </ul>
             <div class="d-flex">
