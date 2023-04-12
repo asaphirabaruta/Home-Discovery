@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
@@ -11,6 +11,7 @@ function App() {
     <>
       <Navbar />
       <div className="container mt-5">
+        <Redirect path="/" to="/homes" />
         <Route path="/login" component={Login} />
         <Route path="/sign-up" component={SignUp} />
         <Route path="/homes" component={Houses} />
