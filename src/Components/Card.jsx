@@ -11,6 +11,9 @@ export default function Card(props) {
           style={{ height: "11rem", objectFit: "contain" }}
           alt="..."
         />
+        <span class="position-absolute top-0 end-0 me-1 mt-1 badge text-bg-light">
+          For Sale
+        </span>
         <div className="card-body">
           <div className="d-flex justify-content-between">
             <h5 className="card-title">${props.price}</h5>
